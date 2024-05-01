@@ -68,10 +68,10 @@ Next will grab the workspace ID to pass into the AKS creation command
 $lawid=(az monitor log-analytics workspace show --resource-group $rg --workspace-name $law --query id -o tsv)
 ```
 
-> Create an AKS cluster.  This is deploying a single node, rapid updating, free tier cluster public cluster.
-> It uses Azure Linux and the Azure CNI with overlay for networking
-> It includes Cluster Insights and the CNI driver.
-> Cluster is not production ready, but is a good test bed.
+Create an AKS cluster.  This is deploying a single node, rapid updating, free tier cluster public cluster.
+It uses Azure Linux and the Azure CNI with overlay for networking
+It includes Cluster Insights and the CNI driver.
+Cluster is not production ready, but suitable for testing
 
 ```powershell
 # Create an AKS cluster
